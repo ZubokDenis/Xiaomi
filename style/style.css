@@ -46,6 +46,7 @@ button {
 
 body {
   background: #222;
+  overflow-x: hidden;
 }
 
 .container {
@@ -215,6 +216,12 @@ header .header-bottom p {
   height: 300px;
 }
 
+.disign {
+  position: relative;
+  background-image: url("../img/png/bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
 .disign h2 {
   font-family: "Gilroy", sans-serif;
   font-weight: 500;
@@ -222,9 +229,7 @@ header .header-bottom p {
   line-height: 110%;
   color: #ff4c0d;
   margin-bottom: 70px;
-}
-.disign .disign-apps {
-  display: flex;
+  max-width: 782px;
 }
 .disign .disign-apps img {
   height: 800px;
@@ -246,6 +251,21 @@ header .header-bottom p {
 .disign .app-title .apps a:first-child {
   margin-right: 20px;
 }
+.disign .app-add {
+  display: flex;
+  align-items: center;
+}
+.disign .zigzag {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.disign .svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
 
 .disign-baner {
   display: flex;
@@ -256,7 +276,6 @@ header .header-bottom p {
   border-radius: 15px;
   padding: 60px;
   padding-top: 368px;
-  background: black;
 }
 .disign-baner__item h3 {
   font-family: "Gilroy", sans-serif;
@@ -274,6 +293,7 @@ header .header-bottom p {
   color: #f1f1f1;
   max-width: 440px;
   margin-top: 15px;
+  max-width: 439px;
 }
 .disign-baner__item:first-child {
   background-image: url("../img/png/samokat.png");
@@ -283,4 +303,273 @@ header .header-bottom p {
 .disign-baner__item:last-child {
   background-image: url("../img/png/panel.png");
   background-repeat: no-repeat;
+}
+
+.app-add {
+  display: flex;
+  justify-content: space-between;
+}
+.app-add img {
+  width: 400px;
+  height: 532px !important;
+  margin-right: 72px;
+}
+
+.rev-que {
+  position: relative;
+}
+
+.review-question {
+  padding: 120px 0;
+  margin-bottom: 120px;
+}
+.review-question .review h2 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 110%;
+  color: #ff4c0d;
+  margin-bottom: 30px;
+}
+.review-question .review .items {
+  position: absolute;
+  display: flex;
+  margin-bottom: 30px;
+}
+.review-question .review__item {
+  margin-bottom: 30px;
+  width: 460px;
+  padding: 40px;
+  background: #151515;
+  border-radius: 15px;
+  margin-right: 40px;
+  box-sizing: border-box;
+}
+.review-question .review__item h3 {
+  position: relative;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #f1f1f1;
+  margin-bottom: 33px;
+}
+.review-question .review__item p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #f1f1f1;
+  max-width: 380px;
+}
+.review-question .review__item h3::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #ff4c0d;
+  width: 100px;
+  bottom: -15px;
+  left: 0;
+}
+.review-question .review__item p:last-child {
+  margin-top: 20px;
+}
+.review-question .slider {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 364px;
+}
+.review-question .slider button {
+  border-radius: 65px;
+  padding: 15px 35px;
+  background: #f1f1f1;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #151515;
+}
+.review-question .slider .arrow {
+  position: relative;
+}
+.review-question .slider .arrow .arrow-l {
+  position: absolute;
+  left: -69px;
+}
+.review-question .question {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.review-question .question .info h2 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 110%;
+  color: #ff4c0d;
+  margin-bottom: 30px;
+  margin-top: 120px;
+  max-width: 415px;
+}
+.review-question .question .info p {
+  margin-bottom: 10px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #f1f1f1;
+  max-width: 328px;
+}
+.review-question .question .info button {
+  margin-top: 50px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #151515;
+  border-radius: 65px;
+  padding: 15px 35px;
+  background: #f1f1f1;
+}
+.review-question .question .questions {
+  position: absolute;
+  right: 0;
+  top: 120px;
+}
+.review-question .question .questions .quest-item {
+  margin-bottom: 40px;
+  right: -500px;
+}
+.review-question .question .questions .quest-item h3 {
+  position: relative;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #f1f1f1;
+  margin-bottom: 33px;
+}
+.review-question .question .questions .quest-item h3::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: #ff4c0d;
+  bottom: -15px;
+  left: 0;
+}
+.review-question .question .questions .quest-item p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #f1f1f1;
+  max-width: 640px;
+}
+.review-question .question .questions .quest-item:last-child {
+  margin-bottom: 0;
+}
+.review-question .svg-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+.review-question .svg-2 {
+  position: absolute;
+  bottom: -160px;
+  left: 0;
+  z-index: -2;
+}
+
+.mi-add {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background-image: url("../img/png/bg-mi.png");
+  border-radius: 15px;
+}
+.mi-add .add-mi {
+  display: flex;
+  flex-direction: column;
+}
+.mi-add .add-mi span {
+  margin-bottom: 280px;
+}
+.mi-add .add-mi button {
+  max-width: 122px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  border-radius: 65px;
+  padding: 15px 35px;
+  background: #ff4c0d;
+}
+.mi-add .add-mi h2 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 110%;
+  color: #f1f1f1;
+}
+.mi-add .add-mi span {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  color: #ff4c0d;
+}
+.mi-add .complect h3 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.mi-add .complect ul li {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.mi-add .complect ul li:last-child {
+  margin-bottom: 0;
+}
+.mi-add img {
+  position: absolute;
+  right: 0;
+  top: -113px;
+}
+
+footer {
+  background-image: url("../img/png/image 8.2.png");
+  padding: 60px 0;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer ul li {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #f1f1f1;
+}
+footer .footer ul li:first-child {
+  margin-bottom: 15px;
+}
+footer .footer ul:last-child {
+  text-align: end;
 }/*# sourceMappingURL=style.css.map */
