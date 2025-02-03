@@ -1,0 +1,274 @@
+@import 'fonts.scss';
+@import 'reset.scss';
+body{
+    background: #222;
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+header{
+    background-image: url('../img/Component\ 2.png');
+    padding-top: 47px;
+    padding-bottom: 364px;
+   
+
+    position: relative;
+    .header-top{
+       margin-bottom: 126px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        &__menu{
+            display: flex;
+            align-items: center;
+            ul{
+                display: flex;
+                li{
+                    font-family: "Gilroy", sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    letter-spacing: -0.01em;
+                    color: #f1f1f1;
+                    margin-right: 40px;
+                }
+                li:last-child{
+                    margin-right: 0;
+                }
+            }
+            svg{
+                margin-right: 80px;
+            }
+        
+        }
+        button{
+            font-family: "Gilroy", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            color: #151515;
+            padding: 15px 35px;
+            border-radius: 65px;
+            position: relative;
+            z-index: 9999;
+        }
+        img{
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 0;
+        }
+        
+            
+            
+        
+      
+    }
+    .header-bottom{
+   
+        position: relative;
+        z-index: 9999;
+        h1{
+            font-family: "Gilroy", sans-serif;
+            font-weight: 600;
+            font-size: 80px;
+            line-height: 100%;
+            color: #f1f1f1;
+            margin-bottom: 30px;
+            max-width: 1072px;
+        }
+    p{
+        font-family: "Gilroy", sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        color: #ff4c0d;
+        max-width: 518px;
+    }
+
+
+}
+}
+.header{
+    background-image: url('../img/Component\ 2.png');
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+.batary{
+    position: relative;
+    svg{
+        position: absolute;
+        border-radius: 100%;
+        
+        filter: blur(94px);
+        top: -50%;
+        left: 150px;
+        }
+}
+.bat{
+    padding-bottom: 120px;
+    h2{
+        font-family: "Gilroy", sans-serif;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 110%;
+        color: #f1f1f1;
+        margin-bottom: 60px;
+        max-width: 1034px;
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        .active{
+            p, h3{
+                opacity: 1 !important;
+            }
+            p::after{
+                background: #ff4c0d !important;
+                opacity: 1 !important;
+            }
+            
+        }
+        .inf{
+            h3{
+                font-family: "Gilroy", sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 120%;
+                color: #f1f1f1;
+                margin-bottom: 33px;
+                opacity: 0.4;
+            }
+            p{
+                // border-top: 3px solid #ff4c0d;
+                font-family: "Gilroy", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: -0.01em;
+                color: #f1f1f1;
+                max-width: 360px;
+                opacity: 0.4;
+                position: relative;
+            }
+            p::after{
+                content: '';
+                position: absolute;
+                width: 111.3%;
+                height: 3px;
+                
+                background: #f1f1f1;
+                opacity: 0.4;
+                top: -15px;
+                left: 0;
+            }
+            
+        }
+        .inf:last-child{
+            p::after{
+                width: 100%;
+            }
+        }
+    }
+    &__img{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        .tab-img1{
+            border-radius: 15px;
+            width: 760px;
+            height: 400px;
+        }
+        .tab-img2{
+            border-radius: 15px;
+            width: 360px;
+            height: 300px;
+        }
+    }
+    
+}
+.disign{
+    h2{
+        font-family: "Gilroy", sans-serif;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 110%;
+        color: #ff4c0d;
+        margin-bottom: 70px;
+    }
+    .disign-apps{
+        display: flex;
+        img{
+            height: 800px;
+        }
+    }
+    .app-title{
+        h2{
+            max-width: 525px;
+            margin-bottom: 30px;
+        }
+        p{
+            font-family: "Gilroy", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: -0.01em;
+            color: #f1f1f1;
+            max-width: 331px;
+            margin-bottom: 60px;
+        }
+        .apps{
+            a:first-child{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+
+.disign-baner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    &__item{
+        border-radius: 15px;
+        padding: 60px;
+        padding-top: 368px;
+        background: black;
+        h3{
+            font-family: "Gilroy", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 120%;
+            color: #f1f1f1;
+        }
+        p{
+            font-family: "Gilroy", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: -0.01em;
+            color: #f1f1f1;
+            max-width: 440px;
+            margin-top: 15px;
+        }
+    }
+    &__item:first-child{
+        background-image: url('../img/png/samokat.png');
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    &__item:last-child{
+        background-image: url('../img/png/panel.png');
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
