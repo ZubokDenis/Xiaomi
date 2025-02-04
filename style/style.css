@@ -54,11 +54,23 @@ body {
   margin: 0 auto;
 }
 
+.cont {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 header {
-  background-image: url("../img/Component 2.png");
   padding-top: 47px;
   padding-bottom: 364px;
+}
+header .head {
   position: relative;
+}
+header .head img {
+  position: absolute;
+  top: -47px;
+  z-index: -2;
+  right: -180px;
 }
 header .header-top {
   margin-bottom: 126px;
@@ -127,21 +139,21 @@ header .header-bottom p {
   max-width: 518px;
 }
 
-.header {
-  background-image: url("../img/Component 2.png");
-  background-position-x: right;
-  background-repeat: no-repeat;
-}
-
-.batary {
-  position: relative;
-}
 .batary svg {
   position: absolute;
   border-radius: 100%;
   filter: blur(94px);
   top: -50%;
   left: 150px;
+}
+
+.bat-img {
+  position: relative;
+}
+
+.svg-bat {
+  position: absolute;
+  bottom: 0;
 }
 
 .bat {
@@ -216,12 +228,6 @@ header .header-bottom p {
   height: 300px;
 }
 
-.disign {
-  position: relative;
-  background-image: url("../img/png/bg.png");
-  background-repeat: no-repeat;
-  background-position: right;
-}
 .disign h2 {
   font-family: "Gilroy", sans-serif;
   font-weight: 500;
@@ -259,11 +265,18 @@ header .header-bottom p {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: -2;
 }
 .disign .svg {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: -2;
+}
+.disign .svg-3 {
+  position: absolute;
+  top: 0;
+  right: -180px;
   z-index: -2;
 }
 
@@ -315,13 +328,10 @@ header .header-bottom p {
   margin-right: 72px;
 }
 
-.rev-que {
-  position: relative;
-}
-
 .review-question {
   padding: 120px 0;
   margin-bottom: 120px;
+  position: relative;
 }
 .review-question .review h2 {
   font-family: "Gilroy", sans-serif;
@@ -475,14 +485,23 @@ header .header-bottom p {
 .review-question .svg-1 {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -180px;
   z-index: -2;
 }
 .review-question .svg-2 {
   position: absolute;
   bottom: -160px;
-  left: 0;
+  left: -180px;
   z-index: -2;
+}
+
+.disign-apps {
+  position: relative;
+}
+
+.zigzag {
+  left: -180px !important;
+  top: -144px !important;
 }
 
 .mi-add {
@@ -572,4 +591,242 @@ footer .footer ul li:first-child {
 }
 footer .footer ul:last-child {
   text-align: end;
+}
+
+.modal {
+  display: none;
+}
+
+.tab-img3, .tab-img4 {
+  display: none;
+  position: absolute;
+}
+
+.phone640 {
+  display: none;
+}
+
+.bike640 {
+  display: none;
+}
+
+.dostavka {
+  display: none;
+}
+
+.bat-svg {
+  bottom: 0;
+  left: 0 !important;
+}
+
+.items {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+.items .review__item {
+  min-width: 460px;
+}
+
+.cont .container {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 40px;
+  }
+  .header-top__menu ul {
+    display: none !important;
+  }
+  .header-top__menu svg {
+    display: block;
+  }
+  .bye {
+    display: none !important;
+  }
+  .tab-img2 {
+    display: none;
+  }
+  .tab-img1 {
+    height: 350px !important;
+    width: 560px !important;
+    position: absolute;
+    top: 400px;
+  }
+  .tab-img3 {
+    display: block;
+    top: 910px;
+  }
+  .tab-img4 {
+    display: block;
+    bottom: 150px;
+  }
+  .modal {
+    position: relative;
+    display: flex !important;
+    border-radius: 100px !important;
+    padding: 15px 15px !important;
+  }
+  .modal img {
+    position: absolute !important;
+    right: 7% !important;
+    bottom: -15px !important;
+  }
+  .header-bottom h1 {
+    font-family: "Gilroy", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 40px !important;
+    line-height: 120% !important;
+    color: #ff4c0d !important;
+    max-width: 560px !important;
+  }
+  .header-bottom p {
+    font-family: "Gilroy", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    line-height: 120% !important;
+    color: #f1f1f1 !important;
+    max-width: 346px !important;
+  }
+  .header {
+    background-position-x: center;
+  }
+  .bat {
+    position: relative;
+  }
+  .bat h2 {
+    font-family: "Gilroy", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    line-height: 110% !important;
+    color: #f1f1f1 !important;
+    max-width: 458px !important;
+  }
+  .bat__info {
+    flex-wrap: wrap;
+  }
+  .inf p {
+    margin-bottom: 405px;
+  }
+  .disign-baner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .disign-baner__item {
+    margin-bottom: 20px;
+  }
+  .disign-baner__item:last-child {
+    margin-bottom: 0;
+  }
+  .phone640 {
+    display: block;
+    margin-right: 0 !important;
+  }
+  .phone {
+    display: none !important;
+  }
+  .app-title h2 {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 110%;
+    color: #ff4c0d;
+  }
+  .app-title p {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+    color: #f1f1f1;
+    max-width: 296px;
+  }
+  .app-title a {
+    width: 120px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  .app-title a:last-child {
+    margin-right: 0;
+  }
+  .question {
+    display: flex;
+    flex-wrap: wrap !important;
+  }
+  .questions {
+    position: relative !important;
+  }
+  .mi-add {
+    padding: 40px !important;
+  }
+  .add-mi h2 {
+    font-family: "Gilroy", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    line-height: 110% !important;
+    color: #f1f1f1 !important;
+  }
+  .add-mi span {
+    font-size: 25px;
+    line-height: 105%;
+    color: #ff4c0d;
+  }
+  .complect {
+    display: none;
+  }
+  .bike640 {
+    width: 424px;
+    height: 484px;
+    right: -215px !important;
+  }
+  .bike6 {
+    display: none;
+  }
+  .bike640 {
+    display: block;
+    right: -70px !important;
+  }
+  .dostavka {
+    display: block;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #f1f1f1;
+    margin-top: 10px;
+  }
+  .inf p, .inf h3 {
+    opacity: 1 !important;
+    max-width: 487px !important;
+  }
+  .inf p::after {
+    background: #ff4c0d !important;
+    opacity: 1 !important;
+    width: 150px !important;
+  }
+  .disign {
+    background-position-y: top;
+  }
+  .zigzag {
+    display: none;
+  }
+  .bat-svg {
+    position: absolute;
+    width: 860px !important;
+    height: 860px !important;
+    left: -250px !important;
+    top: -250px !important;
+  }
+  .svg {
+    display: none;
+  }
+  .app-add img {
+    width: 220px;
+    height: 418px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
