@@ -11,7 +11,7 @@ body{
 }
 
 .cont{
-    max-width: 1440px;
+    max-width: 1440px !important;
     margin: 0 auto;
 }
 
@@ -59,7 +59,7 @@ header{
             }
         
         }
-        button{
+        .bye{
             font-family: "Gilroy", sans-serif;
             font-weight: 700;
             font-size: 16px;
@@ -338,7 +338,10 @@ header{
     margin-bottom: 120px;
     position: relative;
     .review{
+        overflow: hidden;
+        flex-wrap: nowrap;
         // position: relative;
+        margin-left: 140px;
         h2{
             font-family: "Gilroy", sans-serif;
             font-weight: 500;
@@ -348,7 +351,7 @@ header{
             margin-bottom: 30px;
         }
         .items{
-            position: absolute;
+            // position: absolute;
             display: flex;
             margin-bottom: 30px;
         }
@@ -397,125 +400,139 @@ header{
         }
         
     }
-    .slider{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 364px;
+
+
+
+
+
+
+
+.question{
+    position: relative;
+    // display: flex;
+    // align-items: flex-start;
+    // align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    .info{
+        h2{
+            font-family: "Gilroy", sans-serif;
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 110%;
+            color: #ff4c0d;
+            margin-bottom: 30px;
+            margin-top: 120px;
+            max-width: 415px;
+        }
+        p{
+            margin-bottom: 10px;
+            font-family: "Gilroy", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: -0.01em;
+            color: #f1f1f1;
+            max-width: 328px;
+        }
         button{
-            border-radius: 65px;
-            padding: 15px 35px;
-            background: #f1f1f1;
+            margin-top: 50px;
             font-family: "Gilroy", sans-serif;
             font-weight: 700;
             font-size: 16px;
             line-height: 150%;
             color: #151515;
-        }
-        .arrow{
-            position: relative;
-            .arrow-l{
-                position: absolute;
-                left: -69px;
-            }
+            border-radius: 65px;
+            padding: 15px 35px;
+            background: #f1f1f1;
         }
     }
-    .question{
-        position: relative;
-        // display: flex;
-        // align-items: flex-start;
-        // align-self: flex-start;
-        display: flex;
-        justify-content: space-between;
-        
-        
-        .info{
-            h2{
+    .questions{
+        position: absolute;
+        right: 0;
+        top: 120px;
+        .quest-item{
+            
+            margin-bottom: 40px;
+            // position: relative;
+            right: -500px;
+            h3{
+                position: relative;
                 font-family: "Gilroy", sans-serif;
-                font-weight: 500;
-                font-size: 45px;
-                line-height: 110%;
-                color: #ff4c0d;
-                margin-bottom: 30px;
-                margin-top: 120px;
-                max-width: 415px;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 120%;
+                color: #f1f1f1;
+                margin-bottom: 33px;
+            }
+            h3::after{
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 3px;
+                background: #ff4c0d;
+                bottom: -15px;
+                left: 0;
             }
             p{
-                margin-bottom: 10px;
                 font-family: "Gilroy", sans-serif;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 150%;
                 letter-spacing: -0.01em;
                 color: #f1f1f1;
-                max-width: 328px;
-            }
-            button{
-                margin-top: 50px;
-                font-family: "Gilroy", sans-serif;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 150%;
-                color: #151515;
-                border-radius: 65px;
-                padding: 15px 35px;
-                background: #f1f1f1;
+                max-width: 640px;
             }
         }
-        .questions{
-            position: absolute;
-            right: 0;
-            top: 120px;
-            .quest-item{
-                
-                margin-bottom: 40px;
-                // position: relative;
-                right: -500px;
-                h3{
-                    position: relative;
-                    font-family: "Gilroy", sans-serif;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 120%;
-                    color: #f1f1f1;
-                    margin-bottom: 33px;
-                }
-                h3::after{
-                    content: '';
-                    position: absolute;
-                    width: 100px;
-                    height: 3px;
-                    background: #ff4c0d;
-                    bottom: -15px;
-                    left: 0;
-                }
-                p{
-                    font-family: "Gilroy", sans-serif;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 150%;
-                    letter-spacing: -0.01em;
-                    color: #f1f1f1;
-                    max-width: 640px;
-                }
-            }
-            .quest-item:last-child{
-                margin-bottom: 0;
-            }
+        .quest-item:last-child{
+            margin-bottom: 0;
         }
-    }
-    .svg-1{
-        position: absolute;
-        top: 0;
-        right: -180px;
-        z-index: -2;
-    }
-    .svg-2{
-        position: absolute;
-        bottom: -160px;
-        left: -180px;
-        z-index: -2;
     }
 }
+.svg-1{
+    position: absolute;
+    top: 0;
+    right: -180px;
+    z-index: -2;
+}
+.svg-2{
+    position: absolute;
+    bottom: -160px;
+    left: -180px;
+    z-index: -2;
+}
+}
+
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    // margin-top: 364px;
+    button{
+        border-radius: 65px;
+        padding: 15px 35px;
+        background: #f1f1f1;
+        font-family: "Gilroy", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #151515;
+    }
+    .arrow{
+        position: relative;
+        .arrow-l{
+            position: absolute;
+            left: -69px;
+        }
+    }
+}
+
+
+
+
+
 
 
 .disign-apps{
@@ -665,25 +682,60 @@ footer{
     
 }
 
-.cont .container{
-    max-width: none;
-    padding: 0;
-    margin: 0;
+// .cont .container{
+//     max-width: none;
+//     padding: 0;
+//     margin: 0;
+// }
+.bg3{
+    display: none;
 }
-
-
+.bg4{
+    display: none;
+}
+.phone-text{
+    display: none;
+}
+.phone320{
+    display: none;
+}
 @media (max-width:640px){
+
+    .bg3{
+        display: block;
+        right: auto !important;
+    }
+
+
     // svg{
     //     display: none;
     // }
+    .bg2{
+        display: none;
+    }
+    
+    // footer{
+    //     display: none;
+    // }
+
+    // .review{
+    //     display: none;
+    // }
+
     .container{
-        padding: 0 40px;
+        max-width: 560px;
+    }
+    .cont{
+        max-width: 640px !important;
+
+    }
+    .review{
+        margin-right: 40px;
     }
     .header-top__menu{
         ul{
             display: none !important;
-        
-        
+
         }
         svg{
             display: block;
@@ -714,14 +766,9 @@ footer{
         bottom: 150px;
     }
     .modal{
-        position: relative;
-        display: flex  !important;
-        border-radius: 100px !important;
-        padding: 15px 15px !important;
+        display: block !important;
         img{
-            position: absolute !important;
-            right: 7% !important;
-            bottom: -15px !important;
+            
         }
     }
     .header-bottom{
@@ -731,7 +778,7 @@ footer{
             font-size: 40px !important;
             line-height: 120% !important;
             color: #ff4c0d !important;
-            max-width: 560px !important;
+            max-width: 533px !important;
         }
         p{
             font-family: "Gilroy", sans-serif !important;
@@ -840,7 +887,9 @@ footer{
     .bike640{
         width: 424px;
         height: 484px;
-        right: -215px !important;
+        // right: -215px !important;
+        right: -72px     !important;
+
     }
 
     .bike6{
@@ -849,7 +898,7 @@ footer{
     }
     .bike640{
         display: block;
-        right: -70px !important;
+        right: -72px !important;
     }
     .dostavka{
         display: block;
@@ -894,5 +943,202 @@ footer{
             width: 220px;
             height: 418px !important;
         }
+    }
+
+    .review{
+        margin-left: 40px !important;
+    }
+}
+
+
+@media (max-width:320px){
+    .phone640{
+        display: none;
+    }
+    .phone320{
+        display: block;
+        // margin-bottom: 60px !important;
+    }
+    .phone-text{
+        display: block;
+    }
+    svg{
+        display: none;
+    }
+    .bg3{
+        display: none;
+    }
+    .bg4{
+        display: block !important;
+        left: -20px;
+    }
+    header{
+        padding-bottom: 222px !important;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    
+    .review{
+        display: none !important;
+    }
+    .slider{
+        display: none;
+    }
+    .header-bottom{
+        h1{
+            display: none;
+        }
+        p{
+            display: none;
+        }
+    }
+    .bat{
+        padding-bottom: 0px !important;
+        h2{
+            font-family: "Gilroy", sans-serif !important;
+            font-weight: 600 !important;
+            font-size: 25px !important;
+            line-height: 120% !important;
+            color: #f1f1f1 !important;
+            max-width: 280px !important;
+        }
+    }
+    .tab-img1{
+        top: 440px;
+        width: 280px !important;
+        height: 200px !important;
+    }
+    .tab-img2{
+        width: 280px !important;
+        height: 200px !important;
+    }
+    .tab-img3{
+        top: 870px;
+        width: 280px !important;
+        height: 200px !important;
+    }
+    .tab-img4{
+        width: 280px !important;
+        height: 200px !important;
+    }
+    .inf p{
+        margin-bottom: 255px !important;
+        font-family: "Gilroy", sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        line-height: 170% !important;
+        letter-spacing: -0.01em !important;
+        color: #f1f1f1 !important;
+        max-width: 255px !important;
+    }
+    .inf{
+        h3{
+            font-family: "Gilroy", sans-serif !important;
+            font-weight: 600 !important;
+            font-size: 16px !important;
+            line-height: 120% !important;
+            color: #ff4c0d !important;
+        }
+    }
+    .disign{
+        h2{
+            font-family: "Gilroy", sans-serif;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 120%;
+            color: #f1f1f1;
+            max-width: 280px;
+        }
+    }
+    .disign-baner{
+        margin-bottom: 0 !important;
+        &__item{
+            width: 280px !important;
+            height: 260px !important;
+            box-sizing: border-box;
+            padding: 0 !important;
+            margin-bottom: 15px !important;
+            h3, p{
+                display: none;
+            }
+        }
+        &__item:first-child{
+            background-image: url('../img/png/bik-bg.png');
+        }
+        &__item{
+            background-image: url('../img/png/panel320.png');
+        }
+    }
+    .phone-text{
+        h3{
+            font-family: "Gilroy", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 120%;
+            color: #f1f1f1;
+            margin-bottom: 10px;
+        }
+        p{
+            font-family: "Gilroy", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 170%;
+            letter-spacing: -0.01em;
+            color: #f1f1f1;
+            margin-bottom: 20px;
+        }
+        
+    }
+    .app-add{
+        flex-wrap: wrap;
+        .app-title{
+            h2{
+                font-family: "Gilroy", sans-serif;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 120%;
+                color: #ff4c0d;
+                margin-bottom: 10px !important;
+            }
+            p{
+                font-family: "Gilroy", sans-serif;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 170%;
+                letter-spacing: -0.01em;
+                color: #f1f1f1;
+                max-width: 278px;
+                margin-bottom: 105px !important;
+            }
+        }
+    }
+    .review-question{
+        padding-top: 0;
+    }
+    .info h2{
+        margin-top: 60px !important;
+        font-family: "Gilroy", sans-serif !important;
+        font-weight: 600 !important;
+        font-size: 25px !important;
+        line-height: 120% !important;
+        color: #ff4c0d  !important;
+        margin-bottom: 15px !important;
+    }
+    .info p{
+        font-family: "Gilroy", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 170%;
+        letter-spacing: -0.01em;
+        color: #f1f1f1;
+        margin-bottom: 16px;
+    }
+    .info button{
+        margin-top: 0 !important;
+        width: 100%;
+    }
+    .bike640{
+        
     }
 }
