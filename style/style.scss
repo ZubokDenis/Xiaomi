@@ -5,6 +5,10 @@ body{
     overflow-x: hidden;
    
 }
+svg{
+    pointer-events: none;
+}
+
 .container{
     max-width: 1160px;
     // max-width: 1440px;
@@ -14,7 +18,8 @@ body{
 
 .cont{
     padding-left: 180px;
-    
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .rev-text{
     font-family: "Gilroy", sans-serif;
@@ -162,6 +167,7 @@ header{
             
         }
         .inf{
+            cursor: pointer;
             h3{
                 font-family: "Gilroy", sans-serif;
                 font-weight: 600;
@@ -214,6 +220,7 @@ header{
             border-radius: 15px;
             width: 360px;
             height: 300px;
+            order: 1;
         }
     }
     
@@ -644,8 +651,10 @@ footer{
     display: none ;
 }
 .tab-img3, .tab-img4{
-    display: none;
-    position: absolute;
+    // display: none;
+    width: 760px;
+    height: 400px;
+    // position: absolute;
 }
 .phone640{
     display: none;
@@ -719,6 +728,7 @@ footer{
     body{
         max-width:  100%;
         zoom: 0 !important;
+       
     }
     
     .container{
@@ -739,9 +749,9 @@ footer{
         justify-content: space-between;
     }
 
-    // svg{
-    //     display: none;
-    // }
+    svg{
+        display: none;
+    }
     .bg2{
         display: none;
     }

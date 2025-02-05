@@ -49,6 +49,10 @@ body {
   overflow-x: hidden;
 }
 
+svg {
+  pointer-events: none;
+}
+
 .container {
   max-width: 1160px;
   margin: 0 auto;
@@ -56,6 +60,8 @@ body {
 
 .cont {
   padding-left: 180px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .rev-text {
@@ -187,6 +193,9 @@ header .header-bottom p {
   background: #ff4c0d !important;
   opacity: 1 !important;
 }
+.bat__info .inf {
+  cursor: pointer;
+}
 .bat__info .inf h3 {
   font-family: "Gilroy", sans-serif;
   font-weight: 600;
@@ -234,6 +243,7 @@ header .header-bottom p {
   border-radius: 15px;
   width: 360px;
   height: 300px;
+  order: 1;
 }
 
 .disign h2 {
@@ -620,8 +630,8 @@ footer .footer ul:last-child {
 }
 
 .tab-img3, .tab-img4 {
-  display: none;
-  position: absolute;
+  width: 760px;
+  height: 400px;
 }
 
 .phone640 {
@@ -706,6 +716,9 @@ footer .footer ul:last-child {
   }
   .bat {
     justify-content: space-between;
+  }
+  svg {
+    display: none;
   }
   .bg2 {
     display: none;
