@@ -53,6 +53,14 @@ svg {
   pointer-events: none;
 }
 
+.arrow-l {
+  cursor: pointer;
+}
+
+.arrow-r {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1160px;
   margin: 0 auto;
@@ -60,7 +68,6 @@ svg {
 
 .cont {
   padding-left: 180px;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -168,6 +175,10 @@ header .header-bottom p {
 .svg-bat {
   position: absolute;
   bottom: 0;
+}
+
+.items {
+  display: none;
 }
 
 .bat {
@@ -655,7 +666,6 @@ footer .footer ul:last-child {
   position: relative;
   display: flex;
   width: 100%;
-  overflow: hidden;
   flex-wrap: nowrap;
 }
 .items .review__item {
@@ -863,6 +873,9 @@ footer .footer ul:last-child {
     font-size: 25px;
     line-height: 105%;
     color: #ff4c0d;
+  }
+  .items {
+    overflow: hidden !important;
   }
   .complect {
     display: none;

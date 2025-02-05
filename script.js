@@ -31,4 +31,52 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+
+
+    //slider
+
+
+        const left = document.querySelector('.arrow-l'),
+        right = document.querySelector('.arrow-r')
+        slider = document.querySelector('.items');
+    
+    let interval;
+    let paddingLeft = parseInt(window.getComputedStyle(slider).paddingLeft, 10);
+    left.addEventListener('mousedown', () => {
+        
+        interval = setInterval(() => {
+            paddingLeft += 5;
+            slider.style.right = paddingLeft + 'px';
+        }, 40);
+    });
+    
+    left.addEventListener('mouseup', () => {
+        clearInterval(interval);
+    });
+    
+    left.addEventListener('mouseleave', () => {
+        clearInterval(interval);
+    });
+
+
+
+
+  right.addEventListener('mousedown', () => {
+    interval = setInterval(() => {
+        paddingLeft = paddingLeft - 5;
+        slider.style.right = paddingLeft + 'px';
+    }, 40);
+});
+
+right.addEventListener('mouseup', () => {
+    clearInterval(interval);
+});
+
+right.addEventListener('mouseleave', () => {
+    clearInterval(interval);
+});
+
+
+        
 });
